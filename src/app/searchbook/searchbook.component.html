@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Book Name</label>
+                    <input type="text" class="form-control" name="bookTitle" [(ngModel)]="bookTitle">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Search</button>
+                </div>
+                <div *ngFor="let i of data">
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">bookTitle</label>
+                        <input type="text" class="form-control" value="{{i.bookTitle}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">description</label>
+                        <input type="text" class="form-control" value="{{i.description}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">author</label>
+                        <input type="text" class="form-control" value="{{i.author}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">editionNumber</label>
+                        <input type="text" class="form-control" value="{{i.editionNumber}}">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
