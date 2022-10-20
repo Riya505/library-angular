@@ -13,5 +13,11 @@ export class ApiService {
   addBook=(data:any)=>{
     return this.http.post("http://localhost:8080/booksEntry",data)
   }
+  deleteBook=(data:any)=>{
+    return this.http.post("http://localhost:8080/deletebook",data)
+  }
+  searchBook=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchBook",data)
+  }
   
 }
