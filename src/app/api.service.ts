@@ -10,5 +10,8 @@ export class ApiService {
   viewBooks=()=>{
     return this.http.get("http://localhost:8080/viewbooks")
   }
+  addBook=(data:any)=>{
+    return this.http.post("http://localhost:8080/booksEntry",data)
+  }
   
 }
